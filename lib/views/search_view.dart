@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:weather_app/cubits/get_weather_cubit/get_weather_cubit.dart';
 
 class SearchView extends StatelessWidget {
-  const SearchView({Key? key}) : super(key: key);
+  const SearchView({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(

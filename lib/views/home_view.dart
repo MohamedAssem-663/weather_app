@@ -7,7 +7,7 @@ import 'package:weather_app/widgets/no_weather_body.dart';
 import 'package:weather_app/widgets/weather_info_body.dart';
 
 class HomeView extends StatefulWidget {
-  const HomeView({Key? key}) : super(key: key);
+  const HomeView({super.key});
 
   @override
   State<HomeView> createState() => _HomeViewState();
@@ -40,6 +40,8 @@ class _HomeViewState extends State<HomeView> {
         builder: (context, state) {
           if (state is WeatherInitialState) {
             return const NoWeatherBody();
+          } else if (state is WeatherLodingState) {
+            return const Center(child: CircularProgressIndicator());
           } else if (state is WeatherLoadedState) {
             return WeatherInfoBody(
               weather: state.weatherModel,

@@ -5,7 +5,7 @@ import 'package:weather_app/main.dart';
 import 'package:weather_app/models/weather_model.dart';
 
 class WeatherInfoBody extends StatelessWidget {
-  const WeatherInfoBody({Key? key, required this.weather}) : super(key: key);
+  const WeatherInfoBody({super.key, required this.weather});
   final WeatherModel weather;
   @override
   Widget build(BuildContext context) {
@@ -17,9 +17,9 @@ class WeatherInfoBody extends StatelessWidget {
         gradient: LinearGradient(
           colors: [
             getThemeColor(weatherModel.weatherCondition),
-             getThemeColor(weatherModel.weatherCondition)[400]!,
-             getThemeColor(weatherModel.weatherCondition)[300]!,
-             getThemeColor(weatherModel.weatherCondition)[100]!,
+            getThemeColor(weatherModel.weatherCondition)[400]!,
+            getThemeColor(weatherModel.weatherCondition)[300]!,
+            getThemeColor(weatherModel.weatherCondition)[100]!,
           ],
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,

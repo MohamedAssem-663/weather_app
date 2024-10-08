@@ -4,6 +4,8 @@ class WeatherState {}
 
 class WeatherInitialState extends WeatherState {}
 
+class WeatherLodingState extends WeatherState {}
+
 class WeatherLoadedState extends WeatherState {
   final WeatherModel weatherModel;
 
