@@ -25,7 +25,7 @@ class WeatherApp extends StatelessWidget {
                         .weatherModel
                         ?.weatherCondition),
               ),
-              // debugShowCheckedModeBanner: false,
+              debugShowCheckedModeBanner: false,
               home: const HomeView(),
             );
           },
